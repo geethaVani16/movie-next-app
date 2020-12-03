@@ -1,7 +1,9 @@
 import React from 'react';
 import BaseLayout from '../components/layout/BaseLayout';
 import Axios from 'axios';
-import Link from 'next/link';
+// import Link from 'next/link';
+
+import { Link } from '../routes'
 
 class Portfolios extends React.Component {
 
@@ -22,8 +24,8 @@ class Portfolios extends React.Component {
                 <h1>I am Portfolio Page</h1>
                 <ul>
                     {this.props.posts.map(post =>
-                        <li key={post.id} style={{ "fontSize": "20px" }}>
-                            <Link href={`/portfolios/${post.id}`}>
+                        <li key={post.id} >
+                            <Link route={`/portfolios/${post.id}`}>
                                 <a>{post.title} </a>
                             </Link>
                         </li>)}
