@@ -5,13 +5,13 @@ import BasePage from '../components/basePage';
 class Cv extends React.Component {
   render() {
     return (
-        <BaseLayout>
+      <BaseLayout>
         <BasePage>
-        <h1>I am Cv Page</h1>
+          <h1>I am Cv Page</h1>
 
         </BasePage>
 
-        </BaseLayout>
+      </BaseLayout>
     )
   }
 }

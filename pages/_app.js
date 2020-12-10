@@ -3,21 +3,18 @@ import '../styles/main.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
 
-class App extends React.Component {
-  static async getInitialProps({Component, ctx}) {
-    let pageProps = {};
+const App = ({ Component, pageProps } ) => {
 
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
+  return <Component {...pageProps} />
 
-    return { pageProps };
+}
+App.getInitialProps =async ({ Component, ctx }) => {
+  let pageProps = {};
+  if (Component.getInitialProps) {
+    pageProps = await Component.getInitialProps(ctx);
   }
 
-  render() {
-    const { Component, pageProps } = this.props;
-    return <Component {...pageProps} />
-  }
+  return { pageProps };
 }
 
 export default App;
