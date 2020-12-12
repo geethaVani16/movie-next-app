@@ -1,8 +1,8 @@
 import React from 'react';
-import BaseLayout from '../../components/layout/BaseLayout';
+import BaseLayout from '@/components/layout/BaseLayout';
 import Axios from 'axios';
 import Link from 'next/link';
-import BasePage from '../../components/basePage';
+import BasePage from '@/components/basePage';
 
 // import { Link } from '../routes'
 

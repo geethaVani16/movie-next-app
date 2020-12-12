@@ -1,7 +1,7 @@
-import BaseLayout from '../components/layout/BaseLayout';
-import BasePage from '../components/basePage';
+import BaseLayout from '@/components/layout/BaseLayout';
+import BasePage from '@/components/basePage';
 
-Blogs = () => {
+const Blogs = () => {
   return (
     <BaseLayout>
       <BasePage>

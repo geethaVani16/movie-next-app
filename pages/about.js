@@ -1,7 +1,6 @@
 import React from 'react';
-import Header from '../components/shared/Header';
-import BaseLayout from '../components/layout/BaseLayout';
-import BasePage from '../components/basePage';
+import BaseLayout from '@/components/layout/BaseLayout';
+import BasePage from '@/components/basePage';
 
 const About = () => {
   return (

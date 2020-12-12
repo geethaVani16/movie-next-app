@@ -1,7 +1,7 @@
 import React from 'react';
-import BaseLayout from '../../components/layout/BaseLayout';
+import BaseLayout from '@/components/layout/BaseLayout';
 import axios from 'axios';
-import BasePage from '../../components/basePage';
+import BasePage from '@/components/basePage';
 
 const Portfolio = ({ portfolio }) => {
     return (
